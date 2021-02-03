@@ -37,6 +37,10 @@ h1 {
   text-transform: uppercase;
 }
 h2 {
+  font-size: 48px;
+}
+
+h2 {
   font-size: 36px;
   line-height: 49px;
   font-weight: bold;
@@ -65,16 +69,20 @@ h4 {
   overflow: hidden;
 }
 
+.hero {
+  
+}
 .header {
   height: 129px;
-  margin-bottom: 79px;
-  padding-top: 21px;
+  position: relative;
+  margin-bottom: 101px;
+  margin-top: 21px;
+
 }
 
 .container {
   width: 1140px;
   margin: 0 auto;
-  position: relative;
 }
 
 .header__logo {
@@ -84,22 +92,22 @@ h4 {
   left: 0px;
 }
 
-.header__menu {
+.menu {
   font-size: 14px;
-  margin: 0px 0px 0px 439px;
-  padding: 21px 0px 0px 0px;
+}
 
+.header__menu {
+  position: absolute;
+  left: 439px;
+  top: 21px;
 }
 
 .menu__item {
   display: inline-block;
   margin-right: 54px;
-  top: 21px;
-  left: 241px;
 }
 
 .menu__link {
-  font-size: 14px;
   text-decoration: none;
 }
 
@@ -107,9 +115,12 @@ h4 {
   color: #FF3D00;
 }
 
-.header__contacts {
+.contacts {
   font-style: normal;
   text-align: right;
+}
+
+.header__contacts {
   position: absolute;
   top: 4px;
   right: 0px;
@@ -118,7 +129,6 @@ h4 {
 .contacts__phone {
   text-decoration: none;
   font-size: 26px;
-  /* margin-bottom: 2px; */
 }
 
 .contacts__workhours {
@@ -129,24 +139,26 @@ h4 {
   margin-top: -6px;
 }
 
-.hello {
-  text-align: center;
+.hero__content {
   margin-bottom: 216px;
 }
 
-.hello__title {
-  font-weight: bold;
-  margin-bottom: 21px;
-  padding-top: 22px;
+.hero__hello {
+  text-align: center;
 }
 
-.hello__text {
+.hero__title {
+  font-weight: bold;
+  margin-bottom: 21px;
+}
+
+.hero__text {
   font-size: 18px;
   margin-bottom: 43px;
   line-height: 20px;
 }
 
-.hello__button {
+.hero__button {
   font-size: 14px;
   font-weight: bold;
   text-decoration: none;
@@ -388,9 +400,16 @@ h4 {
 
 .footer {
   position: relative;
-  border-top: 1px solid rgba(255, 255, 255,0.1);
   padding-top: 30px;
   padding-bottom: 40px;
+}
+
+.footer-main__container:before {
+  position: absolute;
+  content: '';
+  width: 100%;
+  border-top: 1px solid rgba(255, 255, 255,0.1);
+  top: -31px;
 }
 
 .footer__logo {
@@ -408,13 +427,7 @@ h4 {
   font-size: 14px;
   margin: 0px;
 }
-
-.menu__item {
-  display: inline-block;
-  margin-right: 54px;
-  top: 21px;
-  left: 241px;
-}
+ 
 
 .menu__link {
   font-size: 14px;
@@ -441,15 +454,6 @@ h4 {
   margin-right: 10px;
 }
 
-.footer__contacts {
-  text-align: right;
-}
-
-.contacts__phone {
-  text-decoration: none;
-  font-size: 26px;
-}
-
 .contacts__footer-workhours {
   font-size: 11px;
   text-decoration: none;
@@ -460,4 +464,6 @@ h4 {
   background: url("img/background/hero.png") center top no-repeat, url("img/background/bottom-pic.png") center bottom 306px no-repeat
 }
 
-
+.offers-pic-wrapper {
+  background: url("img/background/top-line.png") top no-repeat;
+}
