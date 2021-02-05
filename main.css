@@ -2,6 +2,10 @@
   box-sizing: border-box;
 }
 
+html {
+  height: 100%;
+}
+
 body{
   font-family: "Open Sans", Helvetica, sans-serif;
   color: #fff;
@@ -9,6 +13,7 @@ body{
   line-height: 1.42;
   background: #17191C;
   margin: 0;
+  height: 100%;
 }
 
  h1, h2, h3, h4, h5, h6, p {
@@ -18,6 +23,11 @@ body{
 a {
   color: inherit;
   text-decoration: none;
+}
+
+.img {
+  display: block;
+  min-width: 100%;
 }
 
 ul {
@@ -40,15 +50,14 @@ h2 {
   font-size: 48px;
 }
 
-h2 {
+h3 {
   font-size: 36px;
   line-height: 49px;
   font-weight: bold;
   color: #fff;
-  text-transform: uppercase;
   margin: 0;
 }
-h3 {
+h4 {
   font-size: 32px;
   line-height: 44px;
   font-weight: 700;
@@ -56,7 +65,7 @@ h3 {
   margin: 0;
 }
 
-h4 {
+h5 {
   font-weight: bold;
   font-size: 24px;
   line-height: 36px;
@@ -69,37 +78,28 @@ h4 {
   overflow: hidden;
 }
 
-.hero {
-  
-}
-.header {
-  height: 129px;
-  position: relative;
-  margin-bottom: 101px;
-  margin-top: 21px;
-
-}
-
 .container {
   width: 1140px;
   margin: 0 auto;
 }
 
-.header__logo {
-  display: block;
-  position: absolute;
-  top: 0px;
-  left: 0px;
+.hero-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 700px;
+}
+  
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 21px;
+  margin-bottom: 50px;
 }
 
 .menu {
   font-size: 14px;
-}
-
-.header__menu {
-  position: absolute;
-  left: 439px;
-  top: 21px;
+  padding-top: 15px;
 }
 
 .menu__item {
@@ -118,12 +118,6 @@ h4 {
 .contacts {
   font-style: normal;
   text-align: right;
-}
-
-.header__contacts {
-  position: absolute;
-  top: 4px;
-  right: 0px;
 }
 
 .contacts__phone {
@@ -150,12 +144,16 @@ h4 {
 .hero__title {
   font-weight: bold;
   margin-bottom: 21px;
+  width: 70%;
+  margin: 0 auto;
 }
 
 .hero__text {
   font-size: 18px;
   margin-bottom: 43px;
   line-height: 20px;
+  /* width: 35%;
+  margin: 0 auto; */
 }
 
 .hero__button {
@@ -173,35 +171,37 @@ h4 {
   margin-bottom: 173px;
 }
 
-.services__content {
-  margin-left: -3px;
+.services__list {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
 }
 
 .services__card {
-  position: relative;
-  display: inline-block;
-  width: 362px;
+  width: calc(100% / 3 - 17px);
+}
+
+.service__card {
+  min-height: 476px;
   background: #fff;
   border-radius: 5px;
   border: 5px solid #fff;
-  margin-right: 22px;
   font-size: 14px;
-  vertical-align: top;
-  box-sizing: border-box;
   color: #666666;
   padding: 36px 22px 53px 22px;
+  overflow: hidden;
 }
 
-.services__card:last-child {
+.service__card:last-child {
   margin-right: 0;
 }
 
-.services__card:hover {
+.service__card:hover {
   border-color: #CCCCCC;
   box-shadow: 0 1px 3px 0 rgba(00, 00, 00, .2);
 }
 
-.services__icon {
+.service__icon {
   display: block;
   position: relative;
   width: 84px;
@@ -209,43 +209,42 @@ h4 {
   margin-bottom: 38px;
   margin-left: 2px;
   }
-.services__title {
+.service__title {
   margin-bottom: 17px;
 }
 
-.services__options {
-  font-size: 16px;
+.service__options {
+  display: flex;
+  justify-content: space-between;
   color: #666666;
   margin-bottom: 22px;
 }
 
 
-.services__option {
-  display: inline-block;
-  width: 123px;
+.service__option {
   margin-right: 57px;
 }
 
-.services__option:first-child {
+.service__option:first-child {
   width: 120px;
 
 }
 
-.services__option:last-child {
+.service__option:last-child {
   margin-right: 0;
 }
 
-.services__text-special {
+.service__text-special {
   font-weight: bold;
   color: #000;
 }
-.services__text {
+.service__text {
   font-size: 14px;
   line-height: 22px;
   color: #666666;
   margin-bottom: 29px;
 }
-.services__button {
+.button__other {
   font-size: 14px;
   line-height: 19px;
   font-weight: bold;
@@ -260,7 +259,7 @@ h4 {
   text-transform: uppercase;
 }
 
-.services__button:hover {
+.button__other:hover {
   background: #ff5500;
   color: #fff;
 }
@@ -275,22 +274,33 @@ h4 {
 }
 
 .news__promo {
+  display: flex;
+  justify-content: space-between;
   margin-bottom: 45px;
 }
 
 .news__item {
-  display: inline-block;
-  width: 557px;
+  height: 394px;
   vertical-align: top;
+  margin-right: 2%;
+  flex: 1;
+}
+
+.unit-news {
   position: relative;
-  margin-right: 21px;
+  overflow: hidden;
 }
 
 .news__item:last-child {
   margin-right: 0;
 }
 
-.news__description {
+.unit-news__pic {
+  width: 100%;
+  height: 100%;
+}
+
+.unit-news__description {
   position: absolute;
   left: 0;
   right: 0;
@@ -299,42 +309,37 @@ h4 {
   min-height: 15px;
 }
 
-.news__date {
+.unit-news__date {
   font-size: 14px;
   margin-bottom: 15px;
   display: block;
 }
 
-.news__subtitle {
+.unit-news__subtitle {
   margin-bottom: 0px;
 }
 
-.news__text {
+.unit-news__text {
   margin-top: 7px;
 }
 
 .pagination {
-  width: 1139px;
-  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .pagination__info {
-  display: inline-block;
   line-height: 20px;
   margin-right: 25px;
 }
 
-.pagination__index, .pagination__count {
-  display: inline-block;
-  line-height: 20px;
-}
-
 .pagination__list {
-  display: inline-block;
+  display: flex;
+  align-items: center;
 }
 
 .pagination__item {
-  display: inline-block;
   text-align: center;
   font-weight: bold;
   line-height: 21px;
@@ -355,19 +360,28 @@ h4 {
 }
 
 .about-us {
-  position: relative;
   margin-bottom: 95px;
 }
 
-.about-us__item {
-  display: inline-block;
+.about-us__container {
+  padding-top: 97px;
+  position: relative;
+  display: flex;
+}
+
+.about-us__pic {
   position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.about-us__item {
+  width: 785px;
   padding: 70px 202px 66px 81px;
   background: #fff;
-  width: auto;
   border-radius: 5px;
-  margin-left: -136px;
-  margin-top: 97px;
+  margin-left: auto;
+  position: relative;
 }
 
 .about-us__title {
@@ -400,28 +414,40 @@ h4 {
 
 .footer {
   position: relative;
-  padding-top: 30px;
-  padding-bottom: 40px;
+  display: flex;
+  align-items: center;
+  height: 170px;
 }
 
 .footer-main__container:before {
   position: absolute;
-  content: '';
+  content: "";
   width: 100%;
   border-top: 1px solid rgba(255, 255, 255,0.1);
   top: -31px;
+  
+}
+
+.footer__col {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.footer__col--alight--right {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  align-items: flex-end;
 }
 
 .footer__logo {
-  display: inline-block;
   position: absolute;
   margin-right: 130px;
-  bottom: 0;
 }
 
 .footer__menu {
   position: absolute;
-  bottom: 0px;
   left: 303px;
   bottom: 11px;
   font-size: 14px;
@@ -464,6 +490,114 @@ h4 {
   background: url("img/background/hero.png") center top no-repeat, url("img/background/bottom-pic.png") center bottom 306px no-repeat
 }
 
-.offers-pic-wrapper {
-  background: url("img/background/top-line.png") top no-repeat;
+
+
+/* Видео-студия. Услуги */
+
+.top-line {
+  display: flex;
+  flex-direction: column;
+  min-height: 416px;
+  background: url(img/background/top-line.png) right top no-repeat;
+  padding-bottom: 28px;
+}
+
+.top-line__container {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.page__title {
+  margin-bottom: 50px;
+}
+
+.breadcrumbs__list {
+  display: flex;
+  align-items: center;
+}
+
+.breadcrumbs__item {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+}
+
+.breadcrumbs__item:after {
+  content: "/";
+  color: #9A9A9A;
+}
+
+.breadcrumbs__item:last-child:after {
+display: none;
+}
+
+.page-content {
+  background: #fff;
+  color: #303030;
+  min-height: 990px;
+  padding: 100px;
+}
+
+.offers {
+  margin-bottom: 70px;
+}
+
+.offer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.offer__img {
+  margin-right: 5%;
+}
+
+.offer__content {
+  flex: 1;
+  padding-bottom: 50px;
+}
+
+.offer__title {
+  color: #000;
+  margin-bottom: 27px;
+}
+
+.offer__text {
+  margin-bottom: 35px;
+  line-height: 27px;
+}
+
+.section__part {
+  background: #fff;
+  padding: 90px 0px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.partners__title {
+  color: #000;
+}
+
+.section__part--bg--grey {
+  background: #F4F5F5;
+}
+
+.partners {
+  display: flex;
+  flex-wrap: wrap;
+  
+  
+}
+
+.partners__item {
+  
+}
+
+.partners__link {
+  text-decoration: none;
+  display: flex;
+  width: 210px;
+  height: 70px;
+  align-items: center;
 }
