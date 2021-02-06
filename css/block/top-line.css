@@ -1,0 +1,18 @@
+.top-line {
+  display: flex;
+  flex-direction: column;
+  min-height: 416px;
+  background: url(img/background/top-line.png) right top no-repeat;
+  padding-bottom: 28px;
+}
+
+.top-line__container {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.page__title {
+  margin-bottom: 50px;
+}

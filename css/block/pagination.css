@@ -1,0 +1,35 @@
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.pagination__info {
+  line-height: 20px;
+  margin-right: 25px;
+}
+
+.pagination__list {
+  display: flex;
+  align-items: center;
+}
+
+.pagination__item {
+  text-align: center;
+  font-weight: bold;
+  line-height: 21px;
+}
+
+.pagination__link {
+  display: block;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  position: relative;
+  line-height: 32px;
+}
+
+.pagination__link-active:hover {
+  background: #f50;
+  vertical-align: middle;
+}
