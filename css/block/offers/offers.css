@@ -1,0 +1,39 @@
+.page-content {
+  background: #fff;
+  color: #303030;
+  min-height: 990px;
+  padding: 100px;
+}
+
+.offers__container {
+  display: flex;
+  flex-direction: column;
+}
+
+.offers {
+  margin-bottom: 70px;
+}
+
+.offer__item {
+  display: flex;
+  justify-content: space-between;
+}
+
+.offer__img {
+  margin-right: 5%;
+}
+
+.offer__content {
+  flex: 1;
+  padding-bottom: 50px;
+}
+
+.offer__title {
+  color: #000;
+  margin-bottom: 27px;
+}
+
+.offer__text {
+  margin-bottom: 35px;
+  line-height: 27px;
+}
