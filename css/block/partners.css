@@ -25,27 +25,33 @@
 .partners__list {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
 }
 
 .partners__item {
-  display: flex;
-  margin-bottom: 60px;
-}
-
-.partners__item:nth-child(4n) .partners__link {
-  justify-content: flex-end;
-}
-
-.partners__link {
-  display: flex;
-  width: 230px;
-  min-height: 70px;
-  align-items: center;
-  justify-content: flex-start;
+  flex-grow: 1;
+  min-width: 282px;
+  max-width: 290px;
+  height: 138px;
+  text-align: center;
   filter: grayscale(1);
 }
 
-.partners__link:hover {
+.partners__link {
+  text-decoration: none;
+}
+
+.partners__item:hover {
   filter: grayscale(0);
+}
+
+.partners__item:nth-child(4n+1) {
+  min-width: 231px;
+  max-width: 258px;
+  text-align: left;
+}
+
+.partners__item:nth-child(4n+4) {
+  max-width: 253px;
+  min-width: 200px;
+  text-align: right;
 }
