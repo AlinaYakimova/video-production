@@ -1,8 +1,7 @@
 .page-content {
   background: #fff;
   color: #303030;
-  min-height: 990px;
-  padding: 100px;
+  padding: 99px 0 88px;
 }
 
 .offers__container {
@@ -11,26 +10,40 @@
 }
 
 .offers {
-  margin-bottom: 70px;
+  margin-bottom: 64px;
 }
 
 .offer__item {
   display: flex;
   justify-content: space-between;
+  margin-bottom: 49px;
+}
+
+.offer__item:last-child {
+  margin-bottom: 0;
 }
 
 .offer__img {
+  width: 40.4%;
   margin-right: 5%;
+  flex-shrink: 0;
+}
+
+.offer__pic {
+  width: 100%;
+  height: auto;
+  display: block;
 }
 
 .offer__content {
   flex: 1;
-  padding-bottom: 50px;
+  padding-top: 12px;
 }
 
 .offer__title {
+  font-weight: 700;
   color: #000;
-  margin-bottom: 27px;
+  margin-bottom: 29px;
 }
 
 .offer__text {

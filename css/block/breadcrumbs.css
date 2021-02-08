@@ -7,13 +7,22 @@
   display: flex;
   align-items: center;
   font-size: 14px;
+  text-decoration: underline;
+  color: #9A9A9A;
 }
 
 .breadcrumbs__item:after {
   content: "/";
   color: #9A9A9A;
+  margin: 0 5px;
+  text-decoration: none;
+}
+
+.breadcrumbs__item:last-child {
+  font-weight: bold;
 }
 
 .breadcrumbs__item:last-child:after {
 display: none;
 }
+

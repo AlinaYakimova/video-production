@@ -25,9 +25,9 @@ a {
   text-decoration: none;
 }
 
-.img {
+img {
   display: block;
-  min-width: 100%;
+  max-width: 100%;
 }
 
 ul {
@@ -40,7 +40,7 @@ ul li {
 }
 
 h1 {
-  font-weight: 800px;
+  font-weight: 800;
   font-size: 72px;
   line-height: 98px;
   font-stretch: normal;
@@ -54,7 +54,7 @@ h2 {
 h3 {
   font-size: 36px;
   line-height: 49px;
-  font-weight: bold;
+  font-weight: 800;
   color: #fff;
   margin: 0;
 }
@@ -82,8 +82,9 @@ h5 {
 .container {
   width: 1140px;
   margin: 0 auto;
+  position: relative;
 }
 
 .main-pic-wrapper {
-  background: url("../../../img/background/hero.png") center top no-repeat, url("../../../img/background/bottom-pic.png") center bottom 306px no-repeat
+  background: url("../../img/background/hero.png") center top no-repeat, url("../../img/background/bottom-pic.png") center bottom 306px no-repeat
 }

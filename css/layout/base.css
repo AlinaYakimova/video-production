@@ -24,8 +24,9 @@ html, body {
   
  .container {
   margin: 0 auto;
-  width: 1060px;
+  width: 1140px;
   display: flex;
+  position: relative;
  }
   
  * {

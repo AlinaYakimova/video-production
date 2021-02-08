@@ -10,18 +10,17 @@
 
 .news__title {
   text-transform: uppercase;
-  margin-bottom: 55px;
+  margin-bottom: 51px;
 }
 
 .news__promo {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 45px;
+  margin-bottom: 53px;
 }
 
 .news__item {
   height: 394px;
-  vertical-align: top;
   margin-right: 2%;
   flex: 1;
 }
@@ -45,20 +44,18 @@
   left: 0;
   right: 0;
   bottom: 0;
-  padding: 15px 80px 26px 30px;
+  padding: 14px 77px 19px 30px;
   min-height: 15px;
 }
 
 .unit-news__date {
   font-size: 14px;
-  margin-bottom: 15px;
+  margin-bottom: 12px;
   display: block;
 }
 
 .unit-news__subtitle {
-  margin-bottom: 0px;
+  margin-bottom: 8px;
 }
 
-.unit-news__text {
-  margin-top: 7px;
-}
+

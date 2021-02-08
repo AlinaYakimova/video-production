@@ -1,16 +1,25 @@
 .footer {
   position: relative;
-  display: flex;
-  align-items: center;
-  height: 170px;
 }
 
-.footer-main:before {
+.footer__container {
   display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 44px 0;
+}
+
+.footer-main__container {
+  padding: 0px 0 60px;
+}
+
+.footer-main__container:before {
+  display: block;
+  position: absolute;
   content: "";
   width: 100%;
   border-top: 1px solid rgba(255, 255, 255,0.1);
-  top: -31px; 
+  top: -38px; 
 }
 
 .footer__col {
@@ -21,25 +30,18 @@
 
 .footer__col--alight--right {
   display: flex;
-  align-items: center;
   justify-content: space-between;
   align-items: flex-end;
 }
 
 .footer__logo {
-  position: absolute;
   margin-right: 130px;
 }
 
 .footer__menu {
-  position: absolute;
-  left: 303px;
-  bottom: 11px;
   font-size: 14px;
-  margin: 0px;
 }
  
-
 .menu__link {
   font-size: 14px;
   text-decoration: none;
@@ -52,17 +54,19 @@
 .footer__socials {
   font-style: normal;
   text-align: right;
-  position: absolute;
-  bottom: 0px;
   font-size: 11px;
-  left: 703px;
+  margin-right: 73px;
 }
 
 .socials__item {
   display: inline-block;
   width: 36px;
   height: 36px;
-  margin-right: 10px;
+  margin-right: 8px;
+}
+
+.socials__item:hover {
+  filter: brightness(2)
 }
 
 .contacts__footer-workhours {

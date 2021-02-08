@@ -2,8 +2,8 @@
   display: flex;
   flex-direction: column;
   min-height: 416px;
-  background: url(img/background/top-line.png) right top no-repeat;
-  padding-bottom: 28px;
+  background: url("../../img/background/top-line.png") top no-repeat;
+  padding-bottom: 24px;
 }
 
 .top-line__container {
@@ -14,5 +14,5 @@
 }
 
 .page__title {
-  margin-bottom: 50px;
+  margin-bottom: 20px;
 }
