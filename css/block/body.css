@@ -67,9 +67,17 @@ h4 {
 }
 
 h5 {
-  font-weight: bold;
+  font-size: 30px;
+  line-height: 42px;
+  font-weight: 700;
+  color: #202020;
+  margin: 0;
+}
+
+h6 {
   font-size: 24px;
   line-height: 36px;
+  font-weight: bold;
   color: #fff;
 }
 
@@ -85,6 +93,15 @@ h5 {
   position: relative;
 }
 
+.input__container {
+  width: 1920px;
+  margin: 0 auto;
+}
+
 .main-pic-wrapper {
   background: url("../../img/background/hero.png") center top no-repeat, url("../../img/background/bottom-pic.png") center bottom 306px no-repeat
+}
+
+.secondary-pic-wrapper {
+  background: url("../../img/background/bg-input.png") center top no-repeat;
 }

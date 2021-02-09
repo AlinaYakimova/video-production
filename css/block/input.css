@@ -1,0 +1,10 @@
+.secondary-pic-wrapper {
+  background: url("../../img/background/bg-input.png") center top no-repeat;
+}
+
+.input__pic {
+  background: url("../../img/background/rec.png") center center no-repeat;
+  transform: translate(30%, 20%);
+}
+
+

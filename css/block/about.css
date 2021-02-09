@@ -39,7 +39,7 @@
   display: inline-block;
 }
 
-.about-us__button {
+.another-button {
   font-size: 14px;
   font-weight: bold;
   text-decoration: none;
@@ -48,5 +48,4 @@
   border-radius: 35px;
   padding: 18px 40px;
   text-transform: uppercase;
-  display: inline-block;
 }

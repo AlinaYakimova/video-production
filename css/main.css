@@ -1,21 +1,25 @@
-@import url('./layout/fonts.css');
-@import url('./layout/normalize.css');
-@import url('./layout/base.css');
+@import url("./layout/fonts.css");
+@import url("./layout/base.css");
+@import url("./layout/normalize.css");
 
-/* папка title */
-@import url('./block/body.css');
-@import url('./block/hero.css');
-@import url('./block/services.css');
-@import url('./block/news.css');
-@import url('./block/pagination.css');
-@import url('./block/about.css');
-@import url('./block/footer.css');
+@import url("./block/input.css");
 
-/* папка offers */
-@import url('./block/top-line.css');
-@import url('./block/breadcrumbs.css');
-@import url('./block/offers.css');
-@import url('./block/partners.css');
+@import url("./block/body.css");
+@import url("./block/hero.css");
+@import url("./block/services.css");
+@import url("./block/news.css");
+@import url("./block/pagination.css");
+@import url("./block/about.css");
+@import url("./block/footer.css");
+
+@import url("./block/");
+
+@import url("./block/top-line.css");
+@import url("./block/breadcrumbs.css");
+@import url("./block/offers.css");
+@import url("./block/partners.css");
+
+
 
 
 
