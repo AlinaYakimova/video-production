@@ -47,6 +47,7 @@ h1 {
   text-transform: uppercase;
 }
 h2 {
+  font-weight: 700;
   font-size: 48px;
   line-height: 65px;
 }
@@ -103,5 +104,9 @@ h6 {
 }
 
 .secondary-pic-wrapper {
-  background: url("../../img/background/bg-input.png") center top no-repeat;
+  background: url("../../img/background/rec.png") center center no-repeat, url("../../img/background/bg-input.png") center center no-repeat;
+  display: flex;
+  width: 100%;
+  height: 100%;
 }
+

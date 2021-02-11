@@ -1,7 +1,13 @@
+
 .pagination {
   display: flex;
   justify-content: center;
   align-items: center;
+  
+}
+
+.pagination-other {
+  color: #000;
 }
 
 .pagination__info {
@@ -33,3 +39,5 @@
   background: #f50;
   vertical-align: middle;
 }
+
+
