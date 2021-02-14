@@ -1,3 +1,7 @@
+.page-content__reviews {
+  padding-bottom: 0;
+}
+
 .reviews {
   margin-bottom: 92px;
 }
@@ -15,38 +19,30 @@
 }
 
 .reviews__list {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: flex-start;
+  columns: 2;
+  column-gap: 30px;
 }
 
 .review__item {
-  max-width: 557px;
+  display: inline-flex;
+  flex-direction: column;
   background: #F4F5F5;
+  padding: 50px 30px;
   margin-bottom: 17px;
 }
 
 .review__head {
   display: flex;
-  padding: 50px 30px;
+  align-items: center;
   margin-bottom: 27px;
 }
 
 .review__avatar {
   margin-right: 20px;
-  padding-left: 28px;
   width: 142px;
   height: 142px;
-}
-
-.review__pic {
   border-radius: 50%;
-  
-}
-
-.review__col {
-  padding-top: 32px;
+  overflow: hidden;
 }
 
 .review__name {
@@ -68,53 +64,59 @@
   height: 30px;
 }
 
-.button__option {
-  display: flex;
-  align-items: flex-start;
-  background: #F2D4C9;
+.tag {
+  display: inline-flex;
+  background: #E7E7E7;
   padding: 10px 25px;
   border-radius: 35px;
   font-size: 13px;
   line-height: 18px;
 }
 
+.review__tag-item {
+  background: #F2D4C9;
+}
+
 .review__title {
   color: #202020;
-  padding-left: 35px;
   margin-bottom: 20px;
 }
 
 .review__text {
-  padding: 0px 31px;
   margin-bottom: 30px;
 }
 
 .review__date {
   font-size: 14px;
   font-weight: 600;
-  padding-left: 31px;
- padding-bottom: 31px;
- color: #202020;
+  padding-bottom: 31px;
+  color: #202020;
 }
 
 .banner {
-  height: 363px;
-}
-
-.bunner__bg {
-  background: url("../../img/background/party.png") center right no-repeat; 
+  background: url("../../img/background/party.png") center left 60% no-repeat;
   background-color: #373737;
+  height: 363px;
 }
 
 .banner__title {
   color: #FFFFFF;
   width: 550px;
-  text-align:left;
+  text-align: left;
   padding-top: 115px;
 }
 
 .banner__sale {
- color: #FF5500; 
+  color: #FF5500;
+}
+
+.comment--bg--grey {
+  background: #F4F5F5;
+}
+
+.container__comment {
+  flex-direction: column;
+  padding-bottom: 96px;
 }
 
 .comment__title {
@@ -124,10 +126,93 @@
   margin-bottom: 56px;
 }
 
-.container-division__inform {
- margin-bottom: 32px;
+.form-input {
+  display: flex;
+  margin-bottom: 25px;
 }
 
-.division__feedback {
-  width: 100%;
+.form__comment {
+  flex: 1;
+  margin-right: 30px;
+  
+  border-radius: 5px;
+  border: #fff;
+  padding: 20px 30px;
+  color: #1A1B1E;
 }
+
+.form__comment:last-child {
+  margin-right: 0;
+}
+
+.form__comment--textarea {
+  min-height: 235px;
+}
+
+.form__comment::placeholder {
+  color: #666;
+}
+
+.form__choice {
+  display: flex;
+}
+
+.form__choice-title {
+  width: 35%;
+  color: #1A1B1E;
+}
+
+.choice {
+  flex: 1;
+  display: flex;
+  flex-wrap: wrap;
+  color: #303030;
+  line-height: 17,7px; 
+}
+
+.choice__item {
+  margin-right: 18px;
+  margin-bottom: 10px;
+}
+
+.choice__item:last-child {
+margin-right: 0;
+}
+
+.another-button--grey {
+  font-size: 14px;
+  font-weight: 700;
+  text-decoration: none;
+  display: inline-block;
+  border-radius: 35px;
+  padding: 18px 40px;
+  text-transform: uppercase;
+  color: #fff;
+  background: #8E8E8E;
+}
+
+.another-button--grey:hover {
+  background: #2B2B2B;
+}
+
+.choice__button {
+  cursor: pointer;
+}
+
+.choice__tag {
+  padding-right: 16px;
+  padding-left: 16px;
+}
+
+.choice__checkbox:checked ~ .choice__tag {
+  background: #F2D4C9;
+}
+
+.choice__checkbox {
+  display: none;
+}
+
+.choice__button {
+  text-align: right;
+}
+
