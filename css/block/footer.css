@@ -59,14 +59,6 @@
   margin-right: 73px;
 }
 
-.socials__item {
-  margin-right: 8px;
-}
-
-.socials__item:hover {
-  filter: brightness(2)
-}
-
 .contacts__footer-workhours {
   font-size: 11px;
   text-decoration: none;

@@ -1,0 +1,52 @@
+.bg-f {
+  width: 36px; height: 36px;
+  background: url('css_sprites.png') -10px -10px;
+}
+
+x
+.bg-in {
+  width: 36px; height: 36px;
+  background: url('css_sprites.png') -66px -10px;
+}
+
+x
+.bg-telegram {
+  width: 36px; height: 36px;
+  background: url('css_sprites.png') -10px -66px;
+}
+
+x
+.bg-vk {
+  width: 36px; height: 36px;
+  background: url('css_sprites.png') -66px -66px;
+}
+
+x
+.bg-f2 {
+  width: 36px; height: 36px;
+  background: url('css_sprites.png') -122px -10px;
+}
+
+x
+.bg-in2 {
+  width: 36px; height: 36px;
+  background: url('css_sprites.png') -122px -66px;
+}
+
+x
+.bg-telegram2 {
+  width: 36px; height: 36px;
+  background: url('css_sprites.png') -10px -122px;
+}
+
+x
+.bg-vk2__1_ {
+  width: 36px; height: 36px;
+  background: url('css_sprites.png') -66px -122px;
+}
+
+x
+.bg-vk_blue {
+  width: 30px; height: 30px;
+  background: url('css_sprites.png') -122px -122px;
+}

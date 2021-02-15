@@ -1,0 +1,37 @@
+.choice {
+  flex: 1;
+  display: flex;
+  flex-wrap: wrap;
+  color: #303030;
+  line-height: 17.7px; 
+}
+
+.choice__item {
+  margin-left: 18px;
+  margin-bottom: 10px;
+}
+
+.choice__item:last-child {
+  margin-right: 0;
+}
+
+.choice__button {
+  cursor: pointer;
+}
+
+.choice__tag {
+  padding-right: 16px;
+  padding-left: 16px;
+}
+
+.choice__checkbox:checked ~ .choice__tag {
+  background: #F2D4C9;
+}
+
+.choice__checkbox {
+  display: none;
+}
+
+.choice__button {
+  text-align: right;
+}

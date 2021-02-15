@@ -6,14 +6,26 @@
 
 @import url("./block/body.css");
 @import url("./block/hero.css");
+@import url("./block/header.css");
+@import url("./block/menu.css");
+@import url("./block/contacts.css");
 @import url("./block/dropdown.css");
 @import url("./block/services.css");
+@import url("./block/button__other.css");
 @import url("./block/news.css");
 @import url("./block/pagination.css");
 @import url("./block/about.css");
 @import url("./block/footer.css");
+@import url("./block/socials.css");
 
 @import url("./block/reviews.css");
+@import url("./block/page-container.css");
+@import url("./block/tag.css");
+@import url("./block/banner.css");
+@import url("./block/comment.css");
+@import url("./block/form.css");
+@import url("./block/choice.css");
+@import url("./block/another-button.css");
 
 @import url("./block/top-line.css");
 @import url("./block/breadcrumbs.css");

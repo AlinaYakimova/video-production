@@ -1,0 +1,41 @@
+.socials__item {
+  margin-right: 8px;
+}
+
+.socials__link {
+  display: block;
+  width: 36px;
+  height: 36px;
+}
+
+.socials__link--telegram {
+  background: url("../../img/social/sprites.png") -10px -66px;
+}
+
+.socials__link--telegram:hover {
+  background: url("../../img/social/sprites.png") -10px -122px;
+}
+
+.socials__link--vk {
+  background: url("../../img/social/sprites.png") -66px -66px;
+}
+
+.socials__link--vk:hover {
+  background: url("../../img/social/sprites.png") -66px -122px;
+}
+
+.socials__link--facebook {
+  background: url("../../img/social/sprites.png") -10px -10px;
+}
+
+.socials__link--facebook:hover {
+  background: url("../../img/social/sprites.png") -122px -10px;
+}
+
+.socials__link--inst {
+  background: url("../../img/social/sprites.png") -66px -10px;
+}
+
+.socials__link--inst:hover {
+  background: url("../../img/social/sprites.png") -122px -66px;
+}

@@ -5,26 +5,28 @@
 .dropdown__link {
   color: #FF3D00; 
   text-decoration: underline;
+  opacity: 0.9;
 }
 
 .dropdown:hover .dropdown__menu {
   display: block;
-  left: 0;
-  opacity: 1;
+  right: 0;
+  opacity: 0.8;
 }
 
 .dropdown__menu {
   position: absolute;
   background: #fff;
+  opacity: 0;
   border: 1px solid black;
-  padding: 22px 19px 15px;
+  padding: 11px 18px 15px;
   min-width: 160px;
   top: 100%;
   display: none;
   color: #1E1F20;
-  right: 0;
-  margin-top: 20px;
-  left: -9999px;
+  margin-top: 6px;
+  right: -9999px;
+  border-radius: 7px;
 }
 
 .dropdown__menu:before {
@@ -35,6 +37,21 @@
   left: 0;
   right: 0;
   top: -29px;
+}
+
+.dropdown__menu:after {
+  content: "";
+  width: 15px;
+  height: 15px;
+  background: #fff;
+  position: absolute;
+  top: -7px;
+  right: 44px;
+  transform: rotate(45deg);
+}
+
+.dropdown__list {
+  text-align: start;
 }
 
 .dropdown__text--bold {

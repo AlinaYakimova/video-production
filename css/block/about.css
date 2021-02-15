@@ -39,19 +39,3 @@
   display: inline-block;
 }
 
-.another-button {
-  font-size: 14px;
-  font-weight: 700;
-  text-decoration: none;
-  display: inline-block;
-  background: #FF5400;
-  border-radius: 35px;
-  padding: 18px 40px;
-  text-transform: uppercase;
-  color: #fff;
-}
-
-.another-button:hover {
- background: #FF3D00;
- box-shadow: 0px 2px 4px rgba(218, 1, 0, 0.3);
-}

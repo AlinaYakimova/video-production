@@ -1,0 +1,15 @@
+.header__main {
+  margin-bottom: 154px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 21px;
+  margin-bottom: 50px;
+}
+
+.header__contacts {
+  padding-top: 9px;
+}

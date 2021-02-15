@@ -1,0 +1,15 @@
+.comment--bg--grey {
+  background: #F4F5F5;
+}
+
+.comment__container {
+  flex-direction: column;
+  padding-bottom: 96px;
+}
+
+.comment__title {
+  color: #202020;
+  text-transform: uppercase;
+  padding-top: 80px;
+  margin-bottom: 56px;
+}

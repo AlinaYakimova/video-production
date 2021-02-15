@@ -1,0 +1,44 @@
+.form-input {
+  display: flex;
+  margin-bottom: 26px;
+}
+
+.form__comment {
+  flex: 1;
+  margin-right: 30px;
+  
+  border-radius: 5px;
+  border: 1px solid #fff;
+  padding: 20px 30px;
+  color: #1A1B1E;
+  outline: #CCCCCC;
+}
+
+.form__comment:focus {
+  border: 1px solid #CCCCCC;
+  
+}
+
+.form__comment:last-child {
+  margin-right: 0;
+}
+
+.form__comment--textarea {
+  min-height: 235px;
+}
+
+.form__comment::placeholder {
+  color: #666;
+}
+
+.form__choice {
+  display: flex;
+  margin-bottom: 18px;
+}
+
+.form__choice-title {
+  width: 35%;
+  font-size: 18px;
+  color: #1A1B1E;
+  padding-top: 11px;
+}

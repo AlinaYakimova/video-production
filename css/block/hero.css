@@ -5,67 +5,6 @@
 .hero-container {
   display: block;
 }
- 
-.header__main {
-  margin-bottom: 154px;
-}
-
-.header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding-top: 21px;
-  margin-bottom: 50px;
-}
-
-.menu {
-  font-size: 14px;
-  padding-top: 10px;
-}
-
-.menu__list {
-  display: flex;
-  align-items: center;
-}
-
-.menu__item {
-  margin-right: 54px;
-}
-
-.menu__item:last-child {
-  margin-right: 0;
-}
-
-.menu__link {
-  text-decoration: none;
-}
-
-.menu__link:hover {
-  color: #FF3D00;
-}
-
-.contacts {
-  font-style: normal;
-  text-align: right;
-  padding-top: 5px;
-}
-
-.header__contacts {
-  padding-top: 9px;
-}
-
-.contacts__phone {
-  text-decoration: none;
-  font-size: 26px;
-  padding-top: 5px;
-}
-
-
-.contacts__workhours {
-  font-size: 13px;
-  line-height: 20px;
-  margin-top: -6px;
-}
 
 .hero__hello {
   text-align: center;
@@ -75,6 +14,7 @@
   font-weight: bold;
   width: 70%;
   margin: 0 auto 18px;
+  padding-top: 105px;
 }
 
 .hero__text {

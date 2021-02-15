@@ -94,11 +94,6 @@ h6 {
   position: relative;
 }
 
-.input__container {
-  width: 1920px;
-  margin: 0 auto;
-}
-
 .main-pic-wrapper {
   background: url("../../img/background/hero.png") center top no-repeat, url("../../img/background/bottom-pic.png") center bottom 306px no-repeat
 }

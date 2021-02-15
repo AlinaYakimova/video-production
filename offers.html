@@ -36,7 +36,19 @@
           </nav>
           <address class="contacts header__contacts">
             <a href="tel:+78007003030" class="contacts__phone">8 800 700 30 30</a>
-            <div class="contacts__workhours">График работы</div>
+            <div class="contacts__workhours dropdown">
+              <a href="#" class="dropdown__link">График работы</a>
+              <div class="dropdown__menu">
+                <ul class="dropdown__list">
+                  <li class="dropdown__item">
+                    <span class="dropdown__text--bold">пн-вс: 09:00 - 20:00</span>
+                  </li>
+                  <li class="dropdown__item">
+                    <span class="dropdown__text">Обед: 14:00 - 14:30</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
           </address>
         </header>
         <h1 class="page__title">услуги
@@ -55,76 +67,79 @@
     </section>
 
     <main class="page-content">
-      <div class="container offers__container">
-        <ul class="offers">
-          <li class="offers__item offer__item">
-            <div class="offer__img">
-              <img src="img/content_offers/girls.png" alt="girls" class="offer__pic">
-            </div>
-            <div class="offer__content">
-              <h3 class="offer__title">Съемки клипа
-              </h3>
-              <div class="offer__text">Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать
-                несколько
-                абзацев более менее осмысленного текста рыбы на русском языке, а начинающему оратору отточить навык
-                публичных выступлений в домашних условиях. При создании генератора мы использовали небезизвестный
-                универсальный код речей.
+      <section class="offers">
+        <div class="container offers__container">
+          <ul class="offers__list">
+            <li class="offers__item offer__item">
+              <div class="offer__img">
+                <img src="img/content_offers/girls.png" alt="girls" class="offer__pic">
               </div>
-              <a href="#" class="offer__button button__other">подробнее
-              </a>
-            </div>
-          </li>
-          <li class="offers__item offer__item">
-            <div class="offer__img">
-              <img src="img/content_offers/engineer.png" alt="engineer" class="offer__pic">
-            </div>
-            <div class="offer__content">
-              <h3 class="offer__title">Съемка мероприятий
-              </h3>
-              <div class="offer__text">Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать
-                несколько абзацев более менее осмысленного текста рыбы на русском языке, а начинающему оратору отточить навык
-                публичных выступлений в домашних условиях. При создании генератора мы использовали небезизвестный
-                универсальный код речей.
+              <div class="offer__content">
+                <h3 class="offer__title">Съемки клипа
+                </h3>
+                <div class="offer__text">Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать
+                  несколько
+                  абзацев более менее осмысленного текста рыбы на русском языке, а начинающему оратору отточить навык
+                  публичных выступлений в домашних условиях. При создании генератора мы использовали небезизвестный
+                  универсальный код речей.
+                </div>
+                <a href="#" class="offer__button button__other">подробнее
+                </a>
               </div>
-              <a href="#" class="offer__button button__other">подробнее
-              </a>
-            </div>
-          </li>
-        </ul>
-    
-        <div class="pagination pagination-other">
-          <div class="pagination__info">Страница <span class="pagination__index">1</span> из <span
-              class="pagination__count">7</span>
-          </div>
-          <ul class="pagination__list">
-            <li class="pagination__item">
-              <a href="#" class="pagination__link pagination__link-active">1</a>
             </li>
-            <li class="pagination__item">
-              <a href="#" class="pagination__link pagination__link-active">2</a>
-            </li>
-            <li class="pagination__item">
-              <a href="#" class="pagination__link pagination__link-active">3</a>
-            </li>
-            <li class="pagination__item">
-              <a href="#" class="pagination__link pagination__link-active">4</a>
-            </li>
-            <li class="pagination__item">
-              <a href="#" class="pagination__link pagination__link-active">5</a>
-            </li>
-            <li class="pagination__item">
-              <a href="#" class="pagination__link pagination__link-active">6</a>
-            </li>
-            <li class="pagination__item">
-              <a href="#" class="pagination__link pagination__link-active">7</a>
+            <li class="offers__item offer__item">
+              <div class="offer__img">
+                <img src="img/content_offers/engineer.png" alt="engineer" class="offer__pic">
+              </div>
+              <div class="offer__content">
+                <h3 class="offer__title">Съемка мероприятий
+                </h3>
+                <div class="offer__text">Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать
+                  несколько абзацев более менее осмысленного текста рыбы на русском языке, а начинающему оратору отточить навык
+                  публичных выступлений в домашних условиях. При создании генератора мы использовали небезизвестный
+                  универсальный код речей.
+                </div>
+                <a href="#" class="offer__button button__other">подробнее
+                </a>
+              </div>
             </li>
           </ul>
+      
+          <div class="pagination pagination-other">
+            <div class="pagination__info">Страница <span class="pagination__index">1</span> из <span
+                class="pagination__count">7</span>
+            </div>
+            <ul class="pagination__list">
+              <li class="pagination__item">
+                <a href="#" class="pagination__link pagination__link-active">1</a>
+              </li>
+              <li class="pagination__item">
+                <a href="#" class="pagination__link pagination__link-active">2</a>
+              </li>
+              <li class="pagination__item">
+                <a href="#" class="pagination__link pagination__link-active">3</a>
+              </li>
+              <li class="pagination__item">
+                <a href="#" class="pagination__link pagination__link-active">4</a>
+              </li>
+              <li class="pagination__item">
+                <a href="#" class="pagination__link pagination__link-active">5</a>
+              </li>
+              <li class="pagination__item">
+                <a href="#" class="pagination__link pagination__link-active">6</a>
+              </li>
+              <li class="pagination__item">
+                <a href="#" class="pagination__link pagination__link-active">7</a>
+              </li>
+            </ul>
+          </div>
         </div>
-      </div>
+      </section>
+      
     </main>
 
     <section class="partners section__partners--bg--grey">
-      <div class="container container__partners">
+      <div class="container partners__container">
         <h2 class="partners__title">Партнеры
         </h2>
         <ul class="partners__list">
@@ -196,23 +211,23 @@
         <div class=" footer__col footer__col--alight--right">
           <ul class="socials footer__socials">
             <li class="socials__item">
-              <a href="#" class="socials__link">
-                <img class="socials__img socials__img-click" src="img/social/telegram.png" alt="telegram">
+              <a href="#" class="socials__link socials__link--telegram">
+                <!-- <img class="socials__img socials__img-click" src="img/social/telegram.png" alt="telegram"> -->
               </a>
             </li>
             <li class="socials__item">
-              <a href="#" class="socials__link">
-                <img src="img/social/vk.png" alt="VK" class="socials__link">
+              <a href="#" class="socials__link socials__link--vk">
+                <!-- <img src="img/social/vk.png" alt="VK" class="socials__link"> -->
               </a>
             </li>
             <li class="socials__item">
-              <a href="#" class="socials__link">
-                <img src="img/social/f.png" alt="facebook" class="socials__link">
+              <a href="#" class="socials__link socials__link--facebook">
+                <!-- <img src="img/social/f.png" alt="facebook" class="socials__link"> -->
               </a>
             </li>
             <li class="socials__item">
-              <a href="#" class="socials__link">
-                <img src="img/social/in.png" alt="inst" class="socials__link">
+              <a href="#" class="socials__link socials__link--inst">
+                <!-- <img src="img/social/in.png" alt="inst" class="socials__link"> -->
               </a>
             </li>
           </ul>

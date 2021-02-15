@@ -5,6 +5,11 @@
   align-items: center;
 }
 
+.input__container {
+  width: 1920px;
+  margin: 0 auto;
+}
+
 .input__block {
   display: flex;
   flex-direction: column;

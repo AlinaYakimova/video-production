@@ -9,7 +9,7 @@
   background: #F4F5F5;
 }
 
-.container__partners {
+.partners__container {
   display: flex;
   flex-direction: column;
   justify-content: space-between;

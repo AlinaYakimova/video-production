@@ -1,0 +1,19 @@
+.button__other {
+  font-size: 14px;
+  line-height: 19px;
+  font-weight: bold;
+  color: #ff5500;
+  text-decoration: none;
+  
+  display: inline-block;
+  border: 2px solid #ff5500;
+  background: #fff;
+  border-radius: 35px;
+  padding: 18px 55px;
+  text-transform: uppercase;
+}
+
+.button__other:hover {
+  background: #ff5500;
+  color: #fff;
+}

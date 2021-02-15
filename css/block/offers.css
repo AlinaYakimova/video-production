@@ -1,4 +1,4 @@
-.page-content {
+.offers {
   background: #fff;
   color: #303030;
   padding: 99px 0 88px;
@@ -9,7 +9,7 @@
   flex-direction: column;
 }
 
-.offers {
+.offers__list {
   margin-bottom: 64px;
 }
 
