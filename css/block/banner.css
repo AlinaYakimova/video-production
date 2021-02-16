@@ -1,14 +1,13 @@
 .banner {
   background: url("../../img/background/party.png") center left 60% no-repeat;
   background-color: #373737;
-  height: 363px;
+  padding: 117px 0px;
 }
 
 .banner__title {
   color: #FFFFFF;
   width: 550px;
   text-align: left;
-  padding-top: 115px;
 }
 
 .banner__sale {

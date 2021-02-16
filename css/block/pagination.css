@@ -32,6 +32,7 @@
   border-radius: 50%;
   position: relative;
   line-height: 32px;
+  transition: 0.3s;
 }
 
 .pagination__link-active:hover {

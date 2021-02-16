@@ -9,7 +9,6 @@
 }
 
 .dropdown:hover .dropdown__menu {
-  display: block;
   right: 0;
   opacity: 0.8;
 }
@@ -22,11 +21,11 @@
   padding: 11px 18px 15px;
   min-width: 160px;
   top: 100%;
-  display: none;
   color: #1E1F20;
   margin-top: 6px;
-  right: -9999px;
+  right: 9999px;
   border-radius: 7px;
+  transition: opacity 0.5s;
 }
 
 .dropdown__menu:before {

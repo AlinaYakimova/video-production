@@ -11,6 +11,7 @@
   border-radius: 35px;
   padding: 18px 55px;
   text-transform: uppercase;
+  transition: 0.3s;
 }
 
 .button__other:hover {

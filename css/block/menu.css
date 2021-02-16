@@ -18,6 +18,7 @@
 
 .menu__link {
   text-decoration: none;
+  transition: color 0.3s;
 }
 
 .menu__link:hover {

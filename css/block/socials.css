@@ -2,6 +2,10 @@
   margin-right: 8px;
 }
 
+.socials__item:last-child {
+  margin-right: 0;
+}
+
 .socials__link {
   display: block;
   width: 36px;

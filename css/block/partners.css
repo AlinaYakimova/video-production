@@ -35,6 +35,7 @@
   height: 138px;
   text-align: center;
   filter: grayscale(1);
+  transition: filter 0.3s;
 }
 
 .partners__link {
@@ -55,4 +56,8 @@
   max-width: 253px;
   min-width: 200px;
   text-align: right;
+}
+
+.partners__icon {
+  display: inline-block;
 }
